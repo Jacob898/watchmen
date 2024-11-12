@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inter-font {
+            font-family: "Inter", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+.grid {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+}
+
+body {
+    background-image: url('Media/rorschach.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*min-height: 100vh;*/
+    /*display: grid;*/
+    /*grid-template-rows: 1fr auto;*/
+}
+
+header, footer {
+    grid-column: 1 / 4;
+}
+
+main {
+    grid-column: 2 / 3;
+}
+
+header{
+    background: yellow;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 10.5vh;
+}
+
+main {
+    color: yellow;
+    /*background: black;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+footer{
+    background: yellow;
+    /*height: 5vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*navbar begin*/
+
+img[src="logo.png"] {
+    width: 41vh;
+}
+
+
+.navbar {
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+}
+
+.navbar li{
+    margin: 3.5vh 2rem;
+}
+
+a {
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar a:hover {
+    background-color: black;
+    transition: 0.4s;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/*navbar end*/
+
+.main-background{
+    /*height: 180vh;*/
+    background: rgba(0,0,0,0.9);
+}
+
+.gallery-background {
+    /*height: 360vh;*/
+    /*display: flex;*/
+    background: rgba(0,0,0,0.6);
+}
+.contact-background {
+    background: rgba(0,0,0,0.6);
+    /*display: flex;*/
+    min-height: 87vh;
+}
+
+b {
+    padding: 50px;
+    font-size: 2.5rem;
+}
+.container{
+    align-self: center;
+    font-size: 45px;
+    /*padding: 50px;*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/*form begin*/
+.form {
+    max-width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*margin-inline: auto;*/
+    background: dimgray;
+    /*height:500px;*/
+    /*width: 500px;*/
+    padding: 30px;
+    border-radius: 10px;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: yellow;
+    color:black;
+    border: none;
+    margin: 8px 0;
+    padding: 14px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+/*form end*/
+.row{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px
+}
+
+.img{
+    height: 75vh;
+    padding: 30px;
+}
+
+p{
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*mobile menu*/
+
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #333;
+    padding: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+    color: #fff;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.mobile-menu ul li a:hover {
+   background-color: black;
+   border-radius: 4px;
+}
+
+/* Stylizacja przycisku mobilnego */
+.menu-toggle {
+    display: none;
+    color: black;
+    background: none;
+    cursor: pointer;
+    font-size: 4rem;
+    padding: 0 2rem;
+}
+
+
+@media (max-width: 768px) {
+    /* Ukrywanie menu komputerowego */
+    .navbar {
+        display: none;
+    }
+
+    /* Pokazywanie przycisku i menu mobilnego */
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Strażnicy | Galeria </title>
+    <link rel="icon" href="Media/icon.png">
+
+</head>
+
+<body class="inter-font">
+
+<div class="grid">
+
+    <header>
+        <img src="Media/logo.png" alt="logo">
+        <nav class="navbar">
+
+            <ul>
+                <li> <a href="index.html">Strona główna</a> </li>
+                <li><a href="galeria.html">Galeria</a> </li>
+                <li><a href="#">Kontakt</a> </li>
+            </ul>
+
+        </nav>
+
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <!-- Menu rozwijane na urządzeniach mobilnych -->
+        <nav id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <main class="contact-background">
+
+    <div class="container">
+
+        <b>Formularz Kontaktowy</b>
+
+    </div>
+
+    <div class="form-container">
+        <div class="form">
+            <form>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="e-mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+
+                <label for="topic">Temat wiadomości: </label>
+                <select id="topic" name="topic">
+                    <option>Gratulacje, 3.0</option>
+                    <option>Piwo</option>
+                    <option>Student</option>
+                </select>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" placeholder="Treść wiadomości" rows="4" cols="50" required  ></textarea>
+
+                <input type="submit" value="Wyślij">
+            </form>
+        </div>
+    </div>
+
+    </main>
+
+
+    <footer>
+        Jakub Stachecki
+    </footer>
+
+</div>
+
+</body>
+</html>
