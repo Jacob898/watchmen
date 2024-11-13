@@ -21,9 +21,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /*min-height: 100vh;*/
-    /*display: grid;*/
-    /*grid-template-rows: 1fr auto;*/
 }
 
 header, footer {
@@ -44,15 +41,10 @@ header{
 
 main {
     color: yellow;
-    /*background: black;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
 }
 
 footer{
     background: yellow;
-    /*height: 5vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,18 +89,14 @@ a {
 /*navbar end*/
 
 .main-background{
-    /*height: 180vh;*/
     background: rgba(0,0,0,0.9);
 }
 
 .gallery-background {
-    /*height: 360vh;*/
-    /*display: flex;*/
     background: rgba(0,0,0,0.6);
 }
 .contact-background {
     background: rgba(0,0,0,0.6);
-    /*display: flex;*/
     min-height: 87vh;
 }
 
@@ -124,6 +112,7 @@ b {
     align-items: center;
     display: flex;
 }
+
 /*form begin*/
 .form {
     max-width:700px;
@@ -184,7 +173,9 @@ input[type=submit]:hover{
     height: 75vh;
     padding: 30px;
 }
-
+.option-first:first {
+    color : #999;
+}
 p{
     padding: 30px;
     text-align: center;
@@ -199,7 +190,7 @@ p{
     position: absolute;
     top: 50px;
     right: 10px;
-    background-color: #333;
+    background-color: black;
     padding: 70px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -251,5 +242,33 @@ p{
 
     .mobile-menu.show {
         display: block;
+    }
+    body {
+        background-attachment: scroll; /* Ustawienie "scroll" poprawia wydajność na mobilnych */
+    }
+
+    .grid{
+        grid-template-columns: 10vw 80vw 10vw;
+    }
+    img[src="Media/logo.png"] {
+        width: 52vw;
+    }
+    img[src="Media/rorschach.webp"] {
+        padding: 22px;
+        font-size: 27px;
+        text-align: center;
+    }
+    b {
+        padding: 27px;
+        text-align: center;
+    }
+
+    .img {
+        height: 44vh;
+        padding: 30px;
+    }
+
+    video {
+        height: 182px;
     }
 }
