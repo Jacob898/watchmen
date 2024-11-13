@@ -1,3 +1,3 @@
 # watchmen
 
-Project 1 in Introduction To Web Applications on AGH University Of Krakow
+Miniproject did for Introduction To Web Applications classes on AGH University Of Krakow
