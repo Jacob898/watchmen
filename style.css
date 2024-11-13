@@ -173,9 +173,7 @@ input[type=submit]:hover{
     height: 75vh;
     padding: 30px;
 }
-.option-first:first {
-    color : #999;
-}
+
 p{
     padding: 30px;
     text-align: center;
@@ -191,7 +189,7 @@ p{
     top: 50px;
     right: 10px;
     background-color: black;
-    padding: 70px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -204,12 +202,12 @@ p{
 
 .mobile-menu ul li {
     text-align: center;
-    margin: 10px 0;
+    margin: 25px 0;
 }
 
 .mobile-menu ul li a {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: none;
 }
 
@@ -269,6 +267,6 @@ p{
     }
 
     video {
-        height: 182px;
+        height: 162px;
     }
 }
